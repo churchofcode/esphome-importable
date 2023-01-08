@@ -16,8 +16,6 @@ esp8266:
   restore_from_flash: true
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
   ap:
     password: ${wifi_ap_password}
 
