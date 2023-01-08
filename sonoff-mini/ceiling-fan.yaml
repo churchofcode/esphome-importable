@@ -11,11 +11,10 @@ esphome:
 
 esp8266:
   board: esp01_1m
-  framework:
-    version: recommended
   restore_from_flash: true
 
 wifi:
+  use_address: ceiling-fan-68e575
   ap:
     password: ${wifi_ap_password}
 
@@ -27,7 +26,7 @@ captive_portal:
 
 dashboard_import:
   package_import_url: github://churchofcode/esphome-importable/sonoff-mini/ceiling-fan.yaml@main
-  import_full_config: false
+  import_full_config: true
 
 ######################################### Entities #########################################
 
